@@ -19,10 +19,14 @@ const Container = () => {
     const [btnAntActivo, setBtnAntActivo] = useState(true)
 
     // Se obtienen los primeros 10 pokémon.
-    useEffect( async () => {
-        setPokemonList( await getPokemonList(page) )
-        setLoading(false)
-    }, [])
+    useEffect( () => {
+        async function fetchData() {
+            const response = await getPokemonList(page)
+            setPokemonList( response )
+            setLoading(false)
+        }
+        fetchData();
+    }, [page])
 
     // Función para pasar a la siguiente página.
     const siguiente = async () => {
