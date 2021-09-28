@@ -1,0 +1,10 @@
+.main-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(90deg, #FF0844 0%, #FFB199 100%);
+    margin-bottom: 15px;
+}

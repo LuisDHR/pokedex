@@ -1,8 +1,10 @@
+import Titlebar from "./components/Titlebar/Titlebar"
+
 function App() {
   return (
-    <div>
-      <h1>Pokédex</h1>
-    </div>
+    <>
+      <Titlebar />
+    </>
   );
 }
 
