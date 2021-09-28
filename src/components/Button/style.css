@@ -21,8 +21,8 @@
     background: #0C7599;
 }
   
-.btn button:disabled {
+.button:disabled {
     background: #E5E5E5;
-    color: #444;
+    color: #777777;
     box-shadow: none;
 }
