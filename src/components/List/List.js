@@ -1,4 +1,4 @@
-// Componente que muestra en un grid 10 tarjetas de pokémon
+// Componente que muestra en un grid 10 tarjetas de pokémones
 // dependiendo de la página donde se encuentre el usuario.
 import Card from '../Card/Card'
 import './style.css'
