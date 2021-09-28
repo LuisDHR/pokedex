@@ -35,6 +35,6 @@ export const getPokemonList = async (page) => {
     for (let i = pages[page].start; i <= pages[page].end; i ++) {
         pokemonArray.push(await getPokemonData(i))
     }
-    console.log(pokemonArray)
+
     return pokemonArray
 }

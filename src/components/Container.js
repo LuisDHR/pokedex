@@ -1,7 +1,6 @@
-// Componente que muestra la barra de título,
-// los pokémones obtenidos y una botonera para
-// cambiar la página actual acendente y descendentemente.
-
+// Componente que muestra la barra de título, los 
+// Pokémon obtenidos, la página actual y una botonera 
+// para cambiar ascendente y descendentemente el número de página.
 import { useState, useEffect } from 'react'
 import Titlebar from "./Titlebar/Titlebar"
 import List from "./List/List"
@@ -9,19 +8,23 @@ import Button from './Button/Button'
 import {getPokemonList} from '../services/pokemonService'
 
 const Container = () => {
+    // Hooks de estado para almacenar/cambiar la página actual
+    // y la lista de Pókemon.
     const [page, setPage] = useState(0)
     const [pokemonList, setPokemonList] = useState([])
+    // Hook de estado para mostrar/controlar el mensaje de 'Cargando...'.
     const [loading, setLoading] = useState(true)
+    // Hooks de estado para controlar el estado de los botones.
     const [btnSigActivo, setBtnSigActivo] = useState(false)
     const [btnAntActivo, setBtnAntActivo] = useState(true)
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // Se obtienen los primeros 10 pokémon.
     useEffect( async () => {
         setPokemonList( await getPokemonList(page) )
         setLoading(false)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
+    // Función para pasar a la siguiente página.
     const siguiente = async () => {
         setBtnSigActivo(true)
         setLoading(true)
@@ -36,6 +39,7 @@ const Container = () => {
         setLoading(false)
     }
 
+    // Función para pasar a la página anterior.
     const anterior = async () => {
         setBtnAntActivo(true)
         setLoading(true)
