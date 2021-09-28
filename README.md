@@ -18,6 +18,6 @@ Este proyecto fue creado con [Create React App](https://github.com/facebook/crea
 ## Requisitos e instalación
 
 1. Instalar Node Js. https://nodejs.org/en/
-2. En el directorio del proyecto ejecutar ```bash npm install``` para descargar paquetes npm.
-3. Ejecutar la aplicación en el modo de desarrollo con ```bash npm start```. 
+2. En el directorio del proyecto ejecutar ```npm install``` para descargar paquetes npm.
+3. Ejecutar la aplicación en el modo de desarrollo con ```npm start```. 
 4. Abrir [http://localhost:3000](http://localhost:3000) para ver en el navegador.
