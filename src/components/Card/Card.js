@@ -1,6 +1,8 @@
 // Componente que muestra los datos 
 // individuales (imagen, nombre, tipo) de un pokémon.
 
+import './style.css'
+
 const Card = ({ pokemon }) => {
     return (
       <div className="card">

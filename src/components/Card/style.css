@@ -1,8 +1,13 @@
+p {
+    margin: 0;
+}
+
 .card {
     border-radius: 25px;
     border: 2px solid #E5E5E5;
     padding: 10px 0px 10px 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #FFF;
 }
 
 .card-title {
@@ -14,7 +19,7 @@
 }
   
 .card:hover {
-    border: 2px solid rebeccapurple;
+    border: 1px solid #FF0844;
 }
   
 .card-img {
@@ -28,10 +33,11 @@
   
 .card-type {
     padding: 5px 10px;
-    margin: 10px 10px 10px 0;
-    border-radius: 5px;
-    background: linear-gradient(90deg, #00C6FB 0%, #005BEA 100%);;
-    color: #fff;
+    margin: 10px 10px 10px 10px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #F9D423 -98.74%, #FF4E50 100%);
+    color: #FFF;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    font-weight: 500;
 }

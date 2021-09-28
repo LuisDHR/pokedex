@@ -1,10 +1,10 @@
-import Titlebar from "./components/Titlebar/Titlebar"
+import React from 'react'
+import Container from './components/Container'
 
 function App() {
+
   return (
-    <>
-      <Titlebar />
-    </>
+    <Container />
   );
 }
 
