@@ -9,6 +9,11 @@ Se desarrollaron 4 componentes individales y uno contenedor:
     - Titlebar: contenedor con el título del proyecto y un fondo ubicado en la parte superior de la página.
     - Container: componente que aloja a los anteriores y además tiene el control del páginado de los pokémones. 
 
+## Capturas de pantalla
+
+![App Screenshot](https://github.com/LuisDHR/pokedex/blob/main/public/Screenshot_1.png)
+![App Screenshot](https://github.com/LuisDHR/pokedex/blob/main/public/Screenshot_2.png)
+
 # Aplicación creada con Create React App
 
 Este proyecto fue creado con [Create React App](https://github.com/facebook/create-react-app).
